@@ -48,12 +48,10 @@ class Song
   def self.new_from_filename(name)
     song = self.new
     @@all << song
-    puts name
     new_name = name.split("- ")[1]
-    puts new_name
     song.name = new_name.split(".mp3")
-    puts song.name
     artist = name.split(" -")[0]
+    puts artist
     song.artist_name = artist
   end
     
