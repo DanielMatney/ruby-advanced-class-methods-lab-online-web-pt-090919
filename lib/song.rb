@@ -50,7 +50,6 @@ class Song
     new_name = fullname.split("- ")[1]
     song.name = new_name.split(".mp3")[0]
     song.artist_name = fullname.split(" -")[0]
-    @@all << song
   end
     
   def self.create_from_filename
