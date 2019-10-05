@@ -50,6 +50,7 @@ class Song
     @@all << song
     puts name
     new_name = name.split("- ")[1]
+    puts new_name
     song.name = new_name.split(".mp3")
     artist = name.split(" -")[0]
     song.artist_name = artist
