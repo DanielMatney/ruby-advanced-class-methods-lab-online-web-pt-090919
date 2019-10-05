@@ -51,7 +51,7 @@ class Song
     artist = name.split(" -")[0]
     song.artist_name = artist
     new_name = name.split("- ")[1]
-    new_name.split(".mp3")[0]
+    song.name = new_name.split(".mp3")[0]
   end
     
     #def self.destroy_all
