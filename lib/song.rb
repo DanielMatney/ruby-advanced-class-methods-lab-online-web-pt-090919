@@ -47,12 +47,12 @@ class Song
     
   def self.new_from_filename(name)
     song = self.new
-    @@all << song
     new_name = name.split("- ")[1]
     song.name = new_name.split(".mp3")
     artist = name.split(" -")[0]
     puts artist
     song.artist_name = artist
+    @@all << song
   end
     
     #def self.destroy_all
