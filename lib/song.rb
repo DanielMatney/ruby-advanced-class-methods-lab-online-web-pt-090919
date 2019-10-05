@@ -51,7 +51,7 @@ class Song
     puts new_name
     song.name = new_name.split(".mp3")[0]
     song.artist_name = fullname.split(" -")[0]
-    puts artist_name
+    puts song.artist_name
     @@all << song
   end
     
