@@ -50,8 +50,6 @@ class Song
     new_name = fullname.split("- ")[1]
     song.name = new_name.split(".mp3")[0]
     song.artist_name = fullname.split(" -")[0]
-    p song.name
-    p song.artist_name
     @@all << song
   end
     
