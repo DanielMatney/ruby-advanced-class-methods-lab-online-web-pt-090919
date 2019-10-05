@@ -45,15 +45,15 @@ class Song
     @@all.sort_by {|song| song.name}
   end
     
-  def self.create_from_filename(name)
-    name.split(".mp3")
-    name.join
-    name.split("- ")
-    name.join
-    name
-  end
+  #def self.create_from_filename(name)
+    #name.split(".mp3")
+    #name.join
+    #name.split("- ")
+    #name.join
+    #name
+  #end
     
-    def self.destroy_all
+    #def self.destroy_all
       
-    end
+    #end
 end
