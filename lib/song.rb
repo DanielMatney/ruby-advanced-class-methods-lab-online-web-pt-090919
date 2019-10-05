@@ -49,9 +49,9 @@ class Song
     song = self.new
     new_name = fullname.split("- ")[1]
     puts new_name
-    puts fullname
     song.name = new_name.split(".mp3")[0]
     song.artist_name = fullname.split(" -")[0]
+    puts artist_name
     @@all << song
   end
     
